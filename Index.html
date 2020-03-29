@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Providers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Nunito:600,700|Patua+One&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="col-md-10 col-md-offset-1 formParent">
+            <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 imageParent">
+                <img src="Images/element3.png">
+            </div>
+            <div class="col-md-8 col-xs-12 formSide">
+                <div class="title">
+                    <h3>Hello, Add New Provider !!</h3>
+                </div>
+                <div class="form">
+                    <form>
+                        <div class="providerName form-group">
+                            <input type="text" placeholder="Enter Provider's Name" class="form-control">
+                        </div> 
+                        <div class="productName form-group">
+                            <div class="col-md-6 col-xs-12 text-left title2">Select Products</div>
+                            <div class="col-md-6 col-xs-12 addLink text-right">
+                                <a href="#" id="myBtn">Add new product to the list</a>
+                            </div>
+                            <div class="col-sm-12 itemsBox">
+                                <ul class="list" id="list">
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-success btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <input type="text" placeholder="Product's Name" id=txtVal>
+              <div class="btnAddDiv text-center">
+                <button class="btn btn-danger addBtn" onclick="addLi()">Add</button>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="Index.js"></script>
+
+</html>
